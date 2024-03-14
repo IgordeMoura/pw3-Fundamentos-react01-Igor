@@ -7,8 +7,8 @@ function App() {
   return (
     <div className="App">
       {/* <h1>ACESSANDO E CONSUMINDO API DE TESTES REQRES</h1> */}
-      <Users/> 
-      {/* <CreateUser/> */}
+      {/* <Users/>  */}
+      <CreateUser/> 
     </div>
   );
 }

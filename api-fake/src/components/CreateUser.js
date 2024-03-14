@@ -6,10 +6,12 @@ function CreateUser(){
     const [name, setName] = useState("");
     const [job, setJob] = useState("");
 
-    function createUser(){
+    function createUser(event){
+
+        event.preventDefault();
 
         let user = JSON.stringify({name:name, job:job});
-        // alert(user);
+        // console.log(user);
 
         axios.post('https://reqres.in/api/users', user)
             .then((response)=>{
